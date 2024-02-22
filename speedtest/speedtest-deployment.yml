@@ -1,0 +1,83 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: librespeed
+  labels:
+    app: librespeed
+spec:
+  selector:
+    matchLabels:
+      app: librespeed
+  replicas: 1 # You could also consider elastic scaling for this deployment
+  template:
+    metadata:
+      labels:
+        app: librespeed
+    spec:
+      containers: 
+      - name: librespeed
+        image: lscr.io/linuxserver/librespeed:latest
+        env:
+        - name: PUID
+          value: 1000
+        - name: PGID
+          value: 1000
+        - name: TZ 
+          value: Etc/UTC
+        volumeMounts:
+        - name: config
+          mountPath: /config
+        ports:
+        - containerPort: 80
+      volumes:
+      - name: config
+        persistentVolumeClaim:
+          claimName: config-claim
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: config-claim
+  namespace: default
+spec:
+  storageClassName: manual
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  volumeName: config-pv
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: config-pv
+  labels:
+    type: local
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: manual
+  hostPath:
+    path: "/home/ubuntu/librespeed/config"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: librespeed
+spec:
+  selector:
+    app: librespeed
+  ports:
+    - port: 83
+      targetPort: 80
+
+
