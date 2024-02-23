@@ -66,17 +66,6 @@ links:
 # First level array represent a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-  - name: "Application Proxy"
-    icon: "fas fa-cloud"
-    items:
-      - name: "Nginx Proxy Manger"
-        logo: "assets/icons/nginxproxymanager.png"
-        subtitle: "Proxy Manager"
-        tag: "nginx"
-        keywoard: "web"
-        url: "https://nginx.anpham.me"
-        target: "_blank" # optional html a tag target attribute
-
   - name: "Speedtest"
     icon: "fas fa-cloud"
     items:
@@ -146,14 +135,7 @@ services:
        url: "https://github.com/phamduchongan93"
        target: "_blank" # optional html a tag target attribute
        
-     - name: "Portainer"
-       logo: "assets/icons/portainer.png"
-       subtitle: "Container Management"
-       tag: "app"
-       keywords: "container"
-       url: "https://portainer.anpham.me"
-       target: "_blank" # optional html a tag target attribute
-     
+    
          #     - name: "Jenkins Server"
          #logo: "assets/icons/jenkins.png"
          #subtitle: "Jenkins Server"
@@ -226,6 +208,22 @@ services:
        tag: "system-engineer"
        keywords: "work school"
        url: "https://canvas.cpp.edu/courses/77922/modules"
+       target: "_blank" # optional html a tag target attribute
+
+     - name: "SE 5100 Intro System Science"
+       logo: "assets/icons/cppdirect.png"
+       subtitle: "SE cources"
+       tag: "system-engineer"
+       keywords: "work school"
+       url: "https://canvas.cpp.edu/courses/89200"
+       target: "_blank" # optional html a tag target attribute
+
+     - name: "SE 5200 System Simulation"
+       logo: "assets/icons/cppdirect.png"
+       subtitle: "SE cources"
+       tag: "system-engineer"
+       keywords: "work school"
+       url: "https://canvas.cpp.edu/courses/89198"
        target: "_blank" # optional html a tag target attribute
 
      - name: "Handshake"

@@ -93,7 +93,10 @@ data:
       service: http://hommer-dashboard:82
     - hostname: kanboard.anpham.me
       service: http://kanboard:81
+    - hostname: speedtest.anpham.me
+      service: http://librespeed:83
  
+
         #
         #
     # This rule sends traffic to the built-in hello-world HTTP server. This can help debug connectivity
