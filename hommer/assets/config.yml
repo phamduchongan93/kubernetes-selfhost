@@ -144,49 +144,10 @@ services:
          #url: "https://jenkins.anpham.me/"
          #target: "_blank" # optional html a tag target attribute
 
-
-  - name: "School and Office"
+  - name: "SE Cources"
     icon: "fas fa-cloud"
     items:
-     - name: "Bronco Login "
-       logo: "assets/icons/cppdirect.png"
-       subtitle: "Bronco Direct for Student Services"
-       tag: "cpp"
-       keywords: "cpp"
-       url: "https://my.cpp.edu"
-       target: "_blank" # optional html a tag target attribute
-
-     - name: "Online Calendar"
-       logo: "assets/icons/cppdirect.png"
-       tag: "cpp"
-       keywords: "calendar"
-       url: "https://drive.anpham.me/apps/calendar/"
-       target: "_blank" # optional html a tag target attribute
-
-
-     - name: "CPP Email Service"
-       logo: "assets/icons/cppdirect.png"
-       subtitle: "CPP Email Server"
-       tag: "app work"
-       keywords: "work"
-       url: "https://outlook.office.com/mail/cpp.edu"
-       target: "_blank" # optional html a tag target attribute
-
-     - name: "AWS from CPP"
-       logo: "assets/icons/cppdirect.png"
-       tag: "AWS CPP"
-       keywords: "work"
-       url: "http://cpplogin.awsapps.com/start/"
-       target: "_blank" 
-
-     - name: "Online Webcam and Mictest"
-       logo: "assets/icons/cppdirect.png"
-       tag: "test work"
-       keywords: "work audio video"
-       url: "https://webcammictest.com"
-       target: "_blank" # optional html a tag target attribute
-
-     - name: "SE5230 System Architecture"
+     - name: "System Architecture"
        logo: "assets/icons/cppdirect.png"
        subtitle: "System Architecture Portal"
        tag: "system-engineer"
@@ -235,6 +196,50 @@ services:
        target: "_blank" # optional html a tag target attribute
 
 
+ 
+
+  - name: "School and Office"
+    icon: "fas fa-cloud"
+    items:
+     - name: "Bronco Login "
+       logo: "assets/icons/cppdirect.png"
+       subtitle: "Bronco Direct for Student Services"
+       tag: "cpp"
+       keywords: "cpp"
+       url: "https://my.cpp.edu"
+       target: "_blank" # optional html a tag target attribute
+
+     - name: "Online Calendar"
+       logo: "assets/icons/cppdirect.png"
+       tag: "cpp"
+       keywords: "calendar"
+       url: "https://drive.anpham.me/apps/calendar/"
+       target: "_blank" # optional html a tag target attribute
+
+
+     - name: "CPP Email Service"
+       logo: "assets/icons/cppdirect.png"
+       subtitle: "CPP Email Server"
+       tag: "app work"
+       keywords: "work"
+       url: "https://outlook.office.com/mail/cpp.edu"
+       target: "_blank" # optional html a tag target attribute
+
+     - name: "AWS from CPP"
+       logo: "assets/icons/cppdirect.png"
+       tag: "AWS CPP"
+       keywords: "work"
+       url: "http://cpplogin.awsapps.com/start/"
+       target: "_blank" 
+
+     - name: "Online Webcam and Mictest"
+       logo: "assets/icons/cppdirect.png"
+       tag: "test work"
+       keywords: "work audio video"
+       url: "https://webcammictest.com"
+       target: "_blank" # optional html a tag target attribute
+
+     
   - name: "Admin "
     icon: "fas fa-cloud"
     items:
@@ -264,6 +269,21 @@ services:
          tag: "library"
          keywords: "library"
          url: "https://libguides.library.cpp.edu/"
+         target: "_blank" # optional html a tag target attribute
+
+  - name: "Virtual Meeting"
+    icon: "Zoom"
+    items:
+       - name: "System Simulation"
+         logo: "assets/icons/cppdirect.png"
+         tag: "zoom"
+         url: "https://cpp.zoom.us/j/88914126169"
+         target: "_blank" # optional html a tag target attribute
+
+       - name: "System Science"
+         logo: "assets/icons/cppdirect.png"
+         tag: "3142"
+         url: "https://cpp.zoom.us/j/89847290142"
          target: "_blank" # optional html a tag target attribute
 
 
