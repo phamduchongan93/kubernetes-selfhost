@@ -265,7 +265,7 @@ services:
     items:
        - name: "CPP Library"
          logo: "assets/icons/cloudcmd.png"
-         subtitle: "Tunneling network"
+         subtitle: "Public Library"
          tag: "library"
          keywords: "library"
          url: "https://libguides.library.cpp.edu/"
