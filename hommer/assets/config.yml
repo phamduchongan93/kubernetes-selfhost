@@ -286,4 +286,10 @@ services:
          url: "https://cpp.zoom.us/j/89847290142"
          target: "_blank" # optional html a tag target attribute
 
+       - name: "Team AI support Channel"
+         logo: "assets/icons/cppdirect.png"
+         tag: "cpp"
+         url: "https://teams.microsoft.com/_?culture=en-us&country=us#/conversations/19:231d122a661e42a68135c6aa230b9d38@thread.v2?ctx=chat"
+         target: "_blank" # optional html a tag target attribute
+
 

@@ -95,7 +95,14 @@ data:
       service: http://kanboard:81
     - hostname: speedtest.anpham.me
       service: http://librespeed:83
+    - hostname: drive.anpham.me
+      service: http://nc:87
+    - hostname: blog.anpham.me
+      service: http://hexo-blog:88
  
+
+
+
 
         #
         #
